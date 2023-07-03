@@ -51,7 +51,6 @@ and a database with tables structure analogical is also created .
 - **[List all genres (e.g 'Comedy', 'Thriller')]**
 - **[List all labels (e.g. 'Gift', 'New')]**
 - **[List all authors (e.g. 'Stephen King')]**
-- **[List all sources (e.g. 'From a friend', 'Online shop')]**
 - **[Add a book]**
 - **[Add a music album]**
 - **[Add a game]**
@@ -96,8 +95,9 @@ ruby main.rb
 ```
 
 ### Test
+To run tests, excute the following command:
 ```sh
-  rspec spec
+  rspec
 ```
 
 <!-- AUTHORS -->
@@ -106,6 +106,12 @@ ruby main.rb
 - GitHub: [@zunairkhan811](https://github.com/zunairkhan811)
 - Twitter: [@zunairkhan811](https://twitter.com/zunairkhan811)
 - LinkedIn: [mzunairkhan](https://www.linkedin.com/in/mzunairkhan)
+
+👤 **Lawrence Amoafo**
+
+- GitHub: [@Kwaku28](https://github.com/Kwaku28)
+- Twitter: [@kwakuamoafo](https://twitter.com/kwakuamoafo)
+- LinkedIn: [Lawrence Amoafo](https://linkedin.com/in/lawrenceamoafo)
 
 <!-- FUTURE FEATURES -->
 
