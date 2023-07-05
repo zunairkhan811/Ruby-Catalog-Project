@@ -11,7 +11,6 @@ class Item
     @sources = []
   end
 
-
   def genre=(genre)
     @genre = genre
     genre.items.push(self) unless genre.items.include?(self)
@@ -31,6 +30,4 @@ class Item
     @sources = sources
     sources.items.push(self) unless sources.items.include?(self)
   end
-
-  
 end
