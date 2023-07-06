@@ -26,7 +26,7 @@ class GameList
     puts ''
   end
 
-  # last_played_at , multiplayer, publish_date,
+  # last_played_at, multiplayer, publish_date,
   def add_game
     print 'Last played at (Year-MM-DD): '
     last_played_at = gets.chomp
