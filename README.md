@@ -86,7 +86,7 @@ cd my-folder
 ### Install
 Install the project using the following 
 ```sh
-bundler install
+bundle install
 ```
 ### Usage 
 To run the project, execute the following command:
