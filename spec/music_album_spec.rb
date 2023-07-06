@@ -1,5 +1,4 @@
-require_relative '../music/music_album'
-require_relative '../item'
+require_relative '../music_album/music_album'
 require 'date'
 
 describe MusicAlbum do
