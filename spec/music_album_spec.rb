@@ -10,8 +10,8 @@ describe MusicAlbum do
   end
 
   it 'can_be_archived? method should return true' do
-    musicalbum = MusicAlbum.new(true, '1990/03/01')
-    expect(musicalbum.publish_date).to eq('1990/03/01')
+    musicalbum = MusicAlbum.new(true, '1990/04/01')
+    expect(musicalbum.publish_date).to eq('1990/04/01')
     expect(musicalbum.can_be_archived?).to be true
   end
 
