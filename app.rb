@@ -5,7 +5,6 @@ require_relative 'list_book'
 require_relative 'game'
 require_relative 'game_save'
 
-
 class App
   def initialize
     @music = MusicList.new
