@@ -27,7 +27,7 @@
 
 # 📖 [Ruby-Catalog-Project] <a name="about-project"></a>
 In this project, a console app is created that will help you to keep a record of different types of things you own: books, music albums, movies, and games. The data is stored in JSON files 
-and a database with tables structure analogical is also created.
+and a database with tables structure analogical is also created .
 
 ## 🛠 Built With <a name="built-with"></a>
 

@@ -1,10 +1,9 @@
-require_relative 'music_album'
-require_relative 'genre'
-require_relative 'music_list'
-require_relative 'list_book'
-require_relative 'game'
-require_relative 'game_save'
-
+require_relative 'classes/music_album'
+require_relative 'classes/genre'
+require_relative 'classes/music_list'
+require_relative 'classes/list_book'
+require_relative 'classes/game'
+require_relative 'classes/game_save'
 
 class App
   def initialize
