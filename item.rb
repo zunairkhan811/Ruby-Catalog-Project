@@ -1,33 +1,37 @@
 class Item
-  attr_reader :publish_date, :genre, :author, :label, :sources
+  attr_reader :id, :genre, :author, :source, :label
+  attr_accessor :publish_date
 
   def initialize(publish_date)
-    @id = Random.rand(1..100)
+    @id = Random.rand(1..1000)
     @publish_date = publish_date
-    @archived = false
-    @genres = []
-    @authors = []
-    @labels = []
-    @sources = []
   end
 
   def genre=(genre)
     @genre = genre
-    genre.items.push(self) unless genre.items.include?(self)
+    genre.add_item(self) unless genre.add_item.include?(self)
   end
 
   def author=(author)
     @author = author
-    author.items.push(self) unless author.items.include?(self)
+    author.add_items(self) unless author.add_items.include?(self)
   end
 
-  def label=(label)
+  def add_label=(label)
     @label = label
-    label.items.push(self) unless label.items.include?(self)
+    label.add_items(self) unless label.add_items.include?(self)
   end
 
-  def sources=(sources)
-    @sources = sources
-    sources.items.push(self) unless sources.items.include?(self)
+  def move_to_archive
+    @archived = can_be_archived?
+  end
+
+  private
+
+  def can_be_archived?
+    current_time = Time.now.year
+    published_at = Date.parse(publish_date).year
+    archived = current_time - published_at
+    archived > 10
   end
 end
