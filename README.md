@@ -64,7 +64,7 @@ and a database with tables structure analogical is also created.
 
 ## Walk-Through Video <a name="walk-through-video"></a>
 
-[Video](https://drive.google.com/file/d/1893S8dN7oHCV1H5Slgo72zPYZZ1CJS1M/view?usp=drive_link)
+[Video](https://drive.google.com/file/d/1893S8dN7oHCV1H5Slgo72zPYZZ1CJS1M/view?usp=sharing)
 
 <!-- GETTING STARTED -->
 
@@ -119,7 +119,7 @@ To run tests, execute the following command:
 
 - GitHub: [@Kwaku28](https://github.com/Kwaku28)
 - Twitter: [@kwakuamoafo](https://twitter.com/kwakuamoafo)
-- LinkedIn: [Lawrence Amoafo](https://linkedin.com/in/lawrenceamoafo)
+- LinkedIn: [Lawrence Amoafo](https://linkedin.com/in/lawrence-amoafo-appoh)
 
 👤 **Ntwali Roland**
 
