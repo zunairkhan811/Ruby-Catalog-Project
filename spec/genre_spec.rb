@@ -1,4 +1,4 @@
-require_relative '../music_album/genre'
+require_relative '../classes/genre'
 
 describe Genre do
   it 'Should create an instance of the Genre class' do
