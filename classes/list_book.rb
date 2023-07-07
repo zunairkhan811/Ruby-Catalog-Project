@@ -56,6 +56,7 @@ class ListBook
   end
 
   def list_all_books
+    puts 'No books added' if @books.empty?
     @books = File.empty?('store/books.json') ? [] : JSON.parse(File.read('store/books.json'))
     @books.each do |book|
       puts "Publish date: #{book['publish_date']}, Publisher: #{book['publisher']}, Cover state: #{book['cover_state']}"
@@ -63,6 +64,7 @@ class ListBook
   end
 
   def list_all_labels
+    puts 'No labels added' if @labels.empty?
     @labels = File.empty?('store/labels.json') ? [] : JSON.parse(File.read('store/labels.json'))
     @labels.each do |label|
       puts "Title: #{label['title']}, Color: #{label['color']}"

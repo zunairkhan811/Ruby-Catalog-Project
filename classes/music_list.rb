@@ -1,5 +1,5 @@
-require_relative './music_album'
-require_relative './genre'
+require_relative 'music_album'
+require_relative 'genre'
 require 'json'
 
 class MusicList
@@ -48,14 +48,14 @@ class MusicList
 
   def save
     albums = @albums.map { |album| { id: album.id, publish_date: album.publish_date, on_spotify: album.on_spotify } }
-    File.write('store/music.json', JSON.pretty_generate(albums))
+    File.write('store/music_album.json', JSON.pretty_generate(albums))
   end
 
   def recover_data
-    return unless File.exist?('store/music.json')
+    return unless File.exist?('store/music_album.json')
 
     album_store = begin
-      JSON.parse(File.read('store/music.json'))
+      JSON.parse(File.read('store/music_album.json'))
     rescue StandardError
       []
     end
