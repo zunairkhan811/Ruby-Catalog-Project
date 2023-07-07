@@ -37,13 +37,13 @@ class ListBook
       publish_date: book.publish_date,
       cover_state: book.cover_state
     }
-  
-    if File.exist?('store/books.json') && !File.empty?('store/books.json')
-      stored_book = JSON.parse(File.read('store/books.json'))
-    else
-      stored_book = []
-    end
-  
+
+    stored_book = if File.exist?('store/books.json') && !File.empty?('store/books.json')
+                    JSON.parse(File.read('store/books.json'))
+                  else
+                    []
+                  end
+
     stored_book << obj
     File.write('store/books.json', stored_book.to_json)
   end
@@ -54,13 +54,13 @@ class ListBook
       title: label.title,
       color: label.color
     }
-  
-    if File.exist?('store/labels.json') && !File.empty?('store/labels.json')
-      stored_label = JSON.parse(File.read('store/labels.json'))
-    else
-      stored_label = []
-    end
-  
+
+    stored_label = if File.exist?('store/labels.json') && !File.empty?('store/labels.json')
+                     JSON.parse(File.read('store/labels.json'))
+                   else
+                     []
+                   end
+
     stored_label << obj
     File.write('store/labels.json', stored_label.to_json)
   end
@@ -69,7 +69,9 @@ class ListBook
     if File.exist?('store/books.json')
       @books = JSON.parse(File.read('store/books.json'))
       @books.each do |book|
-        puts "Publish date: #{book['publish_date']}, Publisher: #{book['publisher']}, Cover state: #{book['cover_state']}"
+        puts "Publish date: #{book['publish_date']}, " \
+             "Publisher: #{book['publisher']}, " \
+             "Cover state: #{book['cover_state']}"
       end
     else
       puts "The books file doesn't exist or is empty."
